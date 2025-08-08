@@ -68,55 +68,301 @@
         // Datos simulados
         const mockData = {
             nextRaces: [
-                {
-                    id: 1,
-                    name: "Gran Premio de España",
-                    country: "España",
-                    circuit: "Circuit de Barcelona-Catalunya",
-                    date: "2024-06-23",
-                    time: "15:00",
-                    flag: "🇪🇸"
-                },
-                {
-                    id: 2,
-                    name: "Gran Premio de Canadá",
-                    country: "Canadá",
-                    circuit: "Circuit Gilles Villeneuve",
-                    date: "2024-06-09",
-                    time: "20:00",
-                    flag: "🇨🇦"
-                }
-            ],
+    {
+        id: 1,
+        name: "Gran Premio de España",
+        country: "España",
+        circuit: "Circuit de Barcelona-Catalunya",
+        date: "2025-06-23",
+        time: "15:00",
+        flag: "🇪🇸"
+    },
+    {
+        id: 2,
+        name: "Gran Premio de Canadá",
+        country: "Canadá",
+        circuit: "Circuit Gilles Villeneuve",
+        date: "2025-07-07",
+        time: "14:00",
+        flag: "🇨🇦"
+    },
+    {
+        id: 3,
+        name: "Gran Premio de Austria",
+        country: "Austria",
+        circuit: "Red Bull Ring",
+        date: "2025-07-21",
+        time: "10:00",
+        flag: "🇦🇹"
+    },
+    {
+        id: 4,
+        name: "Gran Premio de Gran Bretaña",
+        country: "Reino Unido",
+        circuit: "Silverstone Circuit",
+        date: "2025-08-04",
+        time: "10:00",
+        flag: "🇬🇧"
+    },
+    {
+        id: 5,
+        name: "Gran Premio de Hungría",
+        country: "Hungría",
+        circuit: "Hungaroring",
+        date: "2025-08-18",
+        time: "10:00",
+        flag: "🇭🇺"
+    },
+    {
+        id: 6,
+        name: "Gran Premio de Bélgica",
+        country: "Bélgica",
+        circuit: "Circuit de Spa-Francorchamps",
+        date: "2025-09-01",
+        time: "10:00",
+        flag: "🇧🇪"
+    },
+    {
+        id: 7,
+        name: "Gran Premio de Países Bajos",
+        country: "Países Bajos",
+        circuit: "Circuit Zandvoort",
+        date: "2025-09-15",
+        time: "10:00",
+        flag: "🇳🇱"
+    },
+    {
+        id: 8,
+        name: "Gran Premio de Italia",
+        country: "Italia",
+        circuit: "Autodromo Nazionale Monza",
+        date: "2025-09-29",
+        time: "10:00",
+        flag: "🇮🇹"
+    },
+    {
+        id: 9,
+        name: "Gran Premio de Singapur",
+        country: "Singapur",
+        circuit: "Marina Bay Street Circuit",
+        date: "2025-10-13",
+        time: "08:00",
+        flag: "🇸🇬"
+    },
+    {
+        id: 10,
+        name: "Gran Premio de Japón",
+        country: "Japón",
+        circuit: "Suzuka Circuit",
+        date: "2025-10-27",
+        time: "01:00",
+        flag: "🇯🇵"
+    },
+    {
+        id: 11,
+        name: "Gran Premio de Catar",
+        country: "Catar",
+        circuit: "Losail International Circuit",
+        date: "2025-11-10",
+        time: "13:00",
+        flag: "🇶🇦"
+    },
+    {
+        id: 12,
+        name: "Gran Premio de Estados Unidos",
+        country: "Estados Unidos",
+        circuit: "Circuit of the Americas",
+        date: "2025-11-24",
+        time: "15:00",
+        flag: "🇺🇸"
+    },
+    {
+        id: 13,
+        name: "Gran Premio de México",
+        country: "México",
+        circuit: "Autódromo Hermanos Rodríguez",
+        date: "2025-12-01",
+        time: "15:00",
+        flag: "🇲🇽"
+    },
+    {
+        id: 14,
+        name: "Gran Premio de Brasil",
+        country: "Brasil",
+        circuit: "Interlagos",
+        date: "2025-12-08",
+        time: "15:00",
+        flag: "🇧🇷"
+    },
+    {
+        id: 15,
+        name: "Gran Premio de Abu Dhabi",
+        country: "Emiratos Árabes Unidos",
+        circuit: "Yas Marina Circuit",
+        date: "2025-12-22",
+        time: "14:00",
+        flag: "🇦🇪"
+    }
+],
             driversStandings: [
-                { position: 1, name: "Max Verstappen", nationality: "🇳🇱", team: "Red Bull Racing", points: 169 },
-                { position: 2, name: "Sergio Pérez", nationality: "🇲🇽", team: "Red Bull Racing", points: 105 },
-                { position: 3, name: "Fernando Alonso", nationality: "🇪🇸", team: "Aston Martin", points: 93 },
-                { position: 4, name: "Lewis Hamilton", nationality: "🇬🇧", team: "Mercedes", points: 87 },
-                { position: 5, name: "George Russell", nationality: "🇬🇧", team: "Mercedes", points: 65 }
+                { position: 1, name: "Oscar Piastri", nationality: "🇦🇺", team: "McLaren", points: 238 },
+                { position: 2, name: "Lando Norris", nationality: "🇬🇧", team: "McLaren", points: 229 },
+                { position: 3, name: "Max Verstappen", nationality: "🇳🇱", team: "Red Bull Racing", points: 141 },
+                { position: 4, name: "Charles Leclerc", nationality: "🇲🇨", team: "Ferrari", points: 134 },
+                { position: 5, name: "Lewis Hamilton", nationality: "🇬🇧", team: "Ferrari", points: 120 },
+                { position: 6, name: "George Russell", nationality: "🇬🇧", team: "Mercedes-AMG", points: 118 },
+                { position: 7, name: "Pierre Gasly", nationality: "🇫🇷", team: "Alpine", points: 79 },
+                { position: 8, name: "Fernando Alonso", nationality: "🇪🇸", team: "Aston Martin", points: 74 },
+                { position: 9, name: "Esteban Ocon", nationality: "🇫🇷", team: "Haas", points: 67 },
+                { position: 10, name: "Lance Stroll", nationality: "🇨🇦", team: "Aston Martin", points: 64 },
+                { position: 11, name: "Nico Hülkenberg", nationality: "🇩🇪", team: "Sauber", points: 45 },
+                { position: 12, name: "Oliver Bearman", nationality: "🇬🇧", team: "Haas", points: 37 },
+                { position: 13, name: "Yuki Tsunoda", nationality: "🇯🇵", team: "Racing Bulls", points: 32 },
+                { position: 14, name: "Jack Doohan", nationality: "🇦🇺", team: "Alpine", points: 21 },
+                { position: 15, name: "Gabriel Bortoleto", nationality: "🇧🇷", team: "Sauber", points: 19 },
+                { position: 16, name: "Alexander Albon", nationality: "🇹🇭", team: "Williams", points: 17 },
+                { position: 17, name: "Carlos Sainz Jr.", nationality: "🇪🇸", team: "Williams", points: 13 },
+                { position: 18, name: "Isack Hadjar", nationality: "🇫🇷", team: "Racing Bulls", points: 10 },
+                { position: 19, name: "Liam Lawson", nationality: "🇳🇿", team: "Red Bull Racing", points: 5 },
+                { position: 20, name: "Andrea Kimi Antonelli", nationality: "🇮🇹", team: "Mercedes-AMG", points: 2 }
             ],
             constructorsStandings: [
-                { position: 1, name: "Red Bull Racing", points: 274, color: "#1E40AF" },
-                { position: 2, name: "Mercedes", points: 152, color: "#00D2BE" },
-                { position: 3, name: "Aston Martin", points: 120, color: "#006F62" },
-                { position: 4, name: "Ferrari", points: 98, color: "#DC143C" },
-                { position: 5, name: "McLaren", points: 17, color: "#FF8700" }
+                { position: 1, name: "McLaren", points: 467, color: "#FF8700" },
+                { position: 2, name: "Ferrari", points: 254, color: "#DC143C" },
+                { position: 3, name: "Mercedes-AMG", points: 120, color: "#222222" },
+                { position: 4, name: "Red Bull Racing", points: 146, color: "#1E40AF" },
+                { position: 5, name: "Aston Martin", points: 138, color: "#006F62" },
+                { position: 6, name: "Alpine", points: 100, color: "#0090FF" },
+                { position: 7, name: "Haas", points: 104, color: "#CCCCCC" },
+                { position: 8, name: "Sauber", points: 64, color: "#800080" },
+                { position: 9, name: "Racing Bulls", points: 42, color: "#0055FF" },
+                { position: 10, name: "Williams", points: 30, color: "#1E90FF" }
             ],
             teams: [
-                { name: "Red Bull Racing", country: "Austria", engine: "Honda RBPT", color: "#1E40AF", drivers: ["Max Verstappen", "Sergio Pérez"] },
-                { name: "Mercedes", country: "Alemania", engine: "Mercedes", color: "#00D2BE", drivers: ["Lewis Hamilton", "George Russell"] },
-                { name: "Ferrari", country: "Italia", engine: "Ferrari", color: "#DC143C", drivers: ["Charles Leclerc", "Carlos Sainz"] },
-                { name: "McLaren", country: "Reino Unido", engine: "Mercedes", color: "#FF8700", drivers: ["Lando Norris", "Oscar Piastri"] },
-                { name: "Aston Martin", country: "Reino Unido", engine: "Mercedes", color: "#006F62", drivers: ["Fernando Alonso", "Lance Stroll"] },
-                { name: "Alpine", country: "Francia", engine: "Renault", color: "#0090FF", drivers: ["Esteban Ocon", "Pierre Gasly"] }
+                {
+                    name: "Red Bull Racing",
+                    country: "Austria",
+                    engine: "Honda RBPT",
+                    color: "#1E40AF",
+                    drivers: [
+                        "#1 Max Verstappen 🇳🇱",
+                        "#30 Liam Lawson 🇳🇿 (reemplazado brevemente por Yuki Tsunoda)"
+                    ]
+                },
+                {
+                    name: "McLaren",
+                    country: "Reino Unido",
+                    engine: "Mercedes",
+                    color: "#FF8700",
+                    drivers: [
+                        "#4 Lando Norris 🇬🇧",
+                        "#81 Oscar Piastri 🇦🇺"
+                    ]
+                },
+                {
+                    name: "Ferrari",
+                    country: "Italia",
+                    engine: "Ferrari",
+                    color: "#DC143C",
+                    drivers: [
+                        "#16 Charles Leclerc 🇲🇨",
+                        "#44 Lewis Hamilton 🇬🇧 (nuevo en Ferrari este año)"
+                    ]
+                },
+                {
+                    name: "Mercedes-AMG",
+                    country: "Alemania",
+                    engine: "Mercedes",
+                    color: "#222222",
+                    drivers: [
+                        "#63 George Russell 🇬🇧",
+                        "#7 Andrea Kimi Antonelli 🇮🇹 (debutante)"
+                    ]
+                },
+                {
+                    name: "Aston Martin",
+                    country: "Reino Unido",
+                    engine: "Mercedes",
+                    color: "#006F62",
+                    drivers: [
+                        "#14 Fernando Alonso 🇪🇸",
+                        "#18 Lance Stroll 🇨🇦"
+                    ]
+                },
+                {
+                    name: "Alpine",
+                    country: "Francia",
+                    engine: "Renault",
+                    color: "#0090FF",
+                    drivers: [
+                        "#10 Pierre Gasly 🇫🇷",
+                        "#61 Jack Doohan 🇦🇺 (con apariciones de Franco Colapinto 🇦🇷 como piloto reserva)"
+                    ]
+                },
+                {
+                    name: "Haas",
+                    country: "Estados Unidos",
+                    engine: "Ferrari",
+                    color: "#CCCCCC",
+                    drivers: [
+                        "#87 Oliver Bearman 🇬🇧 (rookie)",
+                        "#31 Esteban Ocon 🇫🇷 (nuevo fichaje de Haas)"
+                    ]
+                },
+                {
+                    name: "Sauber",
+                    country: "Suiza",
+                    engine: "Ferrari",
+                    color: "#800080",
+                    drivers: [
+                        "#27 Nico Hülkenberg 🇩🇪",
+                        "#42 Gabriel Bortoleto 🇧🇷 (rookie)"
+                    ]
+                },
+                {
+                    name: "Racing Bulls",
+                    country: "Italia",
+                    engine: "Honda RBPT",
+                    color: "#0055FF",
+                    drivers: [
+                        "#22 Yuki Tsunoda 🇯🇵",
+                        "#28 Isack Hadjar 🇫🇷 (rookie)"
+                    ]
+                },
+                {
+                    name: "Williams",
+                    country: "Reino Unido",
+                    engine: "Mercedes",
+                    color: "#1E90FF",
+                    drivers: [
+                        "#23 Alexander Albon 🇹🇭",
+                        "#55 Carlos Sainz Jr. 🇪🇸"
+                    ]
+                }
             ],
-            drivers: [
-                { name: "Max Verstappen", nationality: "🇳🇱", age: 26, number: 1, team: "Red Bull Racing", wins: 53, poles: 29 },
-                { name: "Lewis Hamilton", nationality: "🇬🇧", age: 39, number: 44, team: "Mercedes", wins: 103, poles: 104 },
-                { name: "Fernando Alonso", nationality: "🇪🇸", age: 42, number: 14, team: "Aston Martin", wins: 32, poles: 22 },
-                { name: "Charles Leclerc", nationality: "🇲🇨", age: 26, number: 16, team: "Ferrari", wins: 5, poles: 24 },
-                { name: "Lando Norris", nationality: "🇬🇧", age: 24, number: 4, team: "McLaren", wins: 0, poles: 1 },
-                { name: "George Russell", nationality: "🇬🇧", age: 26, number: 63, team: "Mercedes", wins: 1, poles: 2 }
-            ],
+            
+           drivers: [
+  { name: "Oscar Piastri", nationality: "🇦🇺", age: 24, number: 81, team: "McLaren", points: 284, wins: 6, poles: 4 },
+  { name: "Lando Norris", nationality: "🇬🇧", age: 25, number: 4, team: "McLaren", points: 275, wins: 5, poles: 4 },
+  { name: "Max Verstappen", nationality: "🇳🇱", age: 27, number: 1, team: "Red Bull Racing", points: 187, wins: 2, poles:5 },
+  { name: "George Russell", nationality: "🇬🇧", age: 26, number: 63, team: "Mercedes-AMG", points: 172, wins: 0, poles:0 },
+  { name: "Charles Leclerc", nationality: "🇲🇨", age: 27, number: 16, team: "Ferrari", points: 151, wins: 0, poles:0 },
+  { name: "Lewis Hamilton", nationality: "🇬🇧", age: 40, number: 44, team: "Ferrari", points: 109, wins: 0, poles:0 },
+  { name: "Andrea Kimi Antonelli", nationality: "🇮🇹", age: 18, number: 7, team: "Mercedes-AMG", points: 64, wins: 0, poles:0 },
+  { name: "Alexander Albon", nationality: "🇹🇭", age: 28, number: 23, team: "Williams", points: 54, wins: 0, poles:0 },
+  { name: "Nico Hülkenberg", nationality: "🇩🇪", age: 37, number: 27, team: "Sauber", points: 37, wins: 0, poles:0 },
+  { name: "Esteban Ocon", nationality: "🇫🇷", age: 28, number: 31, team: "Haas", points: 27, wins: 0, poles:0 },
+  { name: "Fernando Alonso", nationality: "🇪🇸", age: 43, number: 14, team: "Aston Martin", points: 26, wins: 0, poles : 0 },
+  { name: "Lance Stroll", nationality: "🇨🇦", age: 26, number: 18, team: "Aston Martin", points: 26, wins: 0, poles : 0 },
+  { name: "Isack Hadjar", nationality: "🇫🇷", age: 20, number: 28, team: "Racing Bulls", points: 22, wins: 0, poles : 0 },
+  { name: "Pierre Gasly", nationality: "🇫🇷", age: 29, number: 10, team: "Alpine", points: 20, wins: 0, poles : 0 },
+  { name: "Liam Lawson", nationality: "🇳🇿", age: 23, number: 30, team: "Racing Bulls", points: 20, wins: 0, poles : 0 },
+  { name: "Carlos Sainz Jr.", nationality: "🇪🇸", age: 30, number: 55, team: "Williams", points: 16, wins: 0, poles : 0 },
+  { name: "Gabriel Bortoleto", nationality: "🇧🇷", age: 20, number: 42, team: "Sauber", points: 14, wins: 0, poles : 0 },
+  { name: "Yuki Tsunoda", nationality: "🇯🇵", age: 24, number: 22, team: "Racing Bulls", points: 10, wins: 0, poles : 0 },
+  { name: "Oliver Bearman", nationality: "🇬🇧", age: 19, number: 87, team: "Haas", points: 8, wins: 0, poles : 0 },
+  { name: "Franco Colapinto", nationality: "🇦🇷", age: 21, number: 0, team: "Alpine (reserva)", points: 0, wins: 0, poles : 0 },
+],
             news: [
                 {
                     id: 1,
@@ -142,6 +388,32 @@
             ]
         };
 
+        // Coloca esto arriba de F1App o NextRaces, fuera de cualquier componente:
+const raceSchedule = {
+  "Gran Premio de España": {
+    practice1: "10:00 - 11:00",
+    practice2: "13:00 - 14:00",
+    practice3: "11:00 - 12:00 (Sábado)",
+    qualifying: "15:00 - 16:00 (Sábado)",
+    race: "15:00 (Domingo)",
+  },
+  "Gran Premio de Canadá": {
+    practice1: "11:00 - 12:00",
+    practice2: "14:00 - 15:00",
+    practice3: "12:00 - 13:00 (Sábado)",
+    qualifying: "16:00 - 17:00 (Sábado)",
+    race: "16:00 (Domingo)",
+  },
+  "Gran Premio de Austria": {
+    practice1: "09:00 - 10:00",
+    practice2: "12:00 - 13:00",
+    practice3: "10:00 - 11:00 (Sábado)",
+    qualifying: "14:00 - 15:00 (Sábado)",
+    race: "10:00 (Domingo)",
+  },
+  // ...agrega más GPs según sea necesario...
+};
+
         // Componente Header
         const Header = ({ darkMode, toggleDarkMode, activeSection, setActiveSection }) => {
             const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -153,7 +425,8 @@
                 { id: 'equipos', label: 'Equipos' },
                 { id: 'pilotos', label: 'Pilotos' },
                 { id: 'estadisticas', label: 'Estadísticas' },
-                { id: 'noticias', label: 'Noticias' }
+                { id: 'noticias', label: 'Noticias' },
+                { id: 'reglas', label: 'Reglas' }
             ];
 
             return (
@@ -256,8 +529,34 @@
             );
         };
 
-        // Componente Próximas Carreras
+
+        // Modal Cronograma
+        const Modal = ({ show, onClose, children }) => {
+            if (!show) return null;
+            return (
+                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-60">
+                    <div className="bg-white dark:bg-gray-900 rounded-xl p-8 max-w-lg w-full relative shadow-lg">
+                        <button onClick={onClose} className="absolute top-3 right-3 text-gray-500 hover:text-red-600 text-2xl">&times;</button>
+                        {children}
+                    </div>
+                </div>
+            );
+        };
+
+        // Componente Próximas Carreras con Modal
         const NextRaces = () => {
+            const [showModal, setShowModal] = useState(false);
+            const [selectedRace, setSelectedRace] = useState(null);
+
+            const handleOpenModal = (race) => {
+                setSelectedRace(race);
+                setShowModal(true);
+            };
+            const handleCloseModal = () => {
+                setShowModal(false);
+                setSelectedRace(null);
+            };
+
             return (
                 <section className="py-20 bg-gray-50 dark:bg-gray-900">
                     <div className="container mx-auto px-4">
@@ -296,13 +595,50 @@
                                             <span>{race.time}</span>
                                         </div>
                                     </div>
-                                    <button className="mt-4 w-full bg-red-600 text-white py-2 rounded-lg hover:bg-red-700 transition-colors">
+                                    <button
+                                        className="mt-4 w-full bg-red-600 text-white py-2 rounded-lg hover:bg-red-700 transition-colors"
+                                        onClick={() => handleOpenModal(race)}
+                                    >
                                         Ver Cronograma Completo
                                     </button>
                                 </div>
                             ))}
                         </div>
                     </div>
+                    <Modal show={showModal} onClose={handleCloseModal}>
+  {selectedRace && (
+    <div>
+      <h2 className="text-2xl font-bold mb-4 text-gray-800 dark:text-white">
+        Cronograma de {selectedRace.name}
+      </h2>
+      <img
+        src={`https://source.unsplash.com/600x250/?circuit,${encodeURIComponent(
+          selectedRace.circuit
+        )}`}
+        alt={`Circuito ${selectedRace.circuit}`}
+        className="w-full h-48 object-cover rounded-lg mb-4 border border-gray-200 dark:border-gray-700"
+      />
+      <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+        <li>
+          <strong>Práctica 1:</strong> {raceSchedule[selectedRace.name]?.practice1 || "Horario no disponible"}
+        </li>
+        <li>
+          <strong>Práctica 2:</strong> {raceSchedule[selectedRace.name]?.practice2 || "Horario no disponible"}
+        </li>
+        <li>
+          <strong>Práctica 3:</strong> {raceSchedule[selectedRace.name]?.practice3 || "Horario no disponible"}
+        </li>
+        <li>
+          <strong>Clasificación:</strong> {raceSchedule[selectedRace.name]?.qualifying || "Horario no disponible"}
+        </li>
+        <li>
+          <strong>Carrera:</strong> {raceSchedule[selectedRace.name]?.race || selectedRace.time} (
+          {new Date(selectedRace.date).toLocaleDateString("es-ES")})
+        </li>
+      </ul>
+    </div>
+  )}
+</Modal>
                 </section>
             );
         };
@@ -737,6 +1073,168 @@
             );
         };
 
+        // Sección Reglamento FIA 2025
+        const ReglamentoFIA2025 = () => (
+            <section id="reglamento" className="py-20 bg-white dark:bg-gray-900">
+                <div className="container mx-auto px-4 max-w-5xl">
+                    <h2 className="text-4xl font-bold text-center mb-10 text-gray-800 dark:text-white">Reglamento FIA 2025</h2>
+                    <div className="mb-12">
+                        <h3 className="text-2xl font-semibold mb-6 text-red-600 flex items-center">📋 Principales Cambios Reglamentarios 2025</h3>
+                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <div className="card bg-gray-50 dark:bg-gray-800 rounded-xl p-6 border border-gray-200 dark:border-gray-700">
+                                <h3 className="font-bold text-lg mb-2">🏎️ Aerodinámica</h3>
+                                <p><strong>Nuevas restricciones:</strong> Reducción del 10% en la carga aerodinámica total</p>
+                                <p><strong>Alerones:</strong> Altura máxima del alerón trasero reducida a 950mm</p>
+                                <p><strong>Suelo:</strong> Nuevas regulaciones para el efecto suelo más estrictas</p>
+                            </div>
+                            <div className="card bg-gray-50 dark:bg-gray-800 rounded-xl p-6 border border-gray-200 dark:border-gray-700">
+                                <h3 className="font-bold text-lg mb-2">⚡ Unidad de Potencia</h3>
+                                <p><strong>Combustible:</strong> 100% combustible sostenible obligatorio</p>
+                                <p><strong>MGU-K:</strong> Potencia aumentada a 120kW (160hp)</p>
+                                <p><strong>Límite de combustible:</strong> Reducido a 100kg por carrera</p>
+                            </div>
+                            <div className="card bg-gray-50 dark:bg-gray-800 rounded-xl p-6 border border-gray-200 dark:border-gray-700">
+                                <h3 className="font-bold text-lg mb-2">🏁 Formato de Carrera</h3>
+                                <p><strong>Carreras Sprint:</strong> 6 carreras sprint en la temporada 2025</p>
+                                <p><strong>Puntos:</strong> Sistema de puntos extendido hasta P12</p>
+                                <p><strong>Parc Fermé:</strong> Nuevas reglas desde la clasificación sprint</p>
+                            </div>
+                            <div className="card bg-gray-50 dark:bg-gray-800 rounded-xl p-6 border border-gray-200 dark:border-gray-700">
+                                <h3 className="font-bold text-lg mb-2">⚖️ Peso y Dimensiones</h3>
+                                <p><strong>Peso mínimo:</strong> 798kg (incluido piloto)</p>
+                                <p><strong>Longitud máxima:</strong> 5.5 metros</p>
+                                <p><strong>Ancho máximo:</strong> 2.0 metros</p>
+                            </div>
+                            <div className="card bg-gray-50 dark:bg-gray-800 rounded-xl p-6 border border-gray-200 dark:border-gray-700">
+                                <h3 className="font-bold text-lg mb-2">🛡️ Seguridad</h3>
+                                <p><strong>Halo:</strong> Nuevas especificaciones de resistencia</p>
+                                <p><strong>Barreras:</strong> Mejoras en sistemas de absorción de impacto</p>
+                                <p><strong>Cascos:</strong> Nuevos estándares FIA 8860-2018 obligatorios</p>
+                            </div>
+                            <div className="card bg-gray-50 dark:bg-gray-800 rounded-xl p-6 border border-gray-200 dark:border-gray-700">
+                                <h3 className="font-bold text-lg mb-2">💰 Tope Presupuestario</h3>
+                                <p><strong>Límite 2025:</strong> $135 millones USD</p>
+                                <p><strong>Exclusiones:</strong> Salarios de pilotos y top 3 ejecutivos</p>
+                                <p><strong>Penalizaciones:</strong> Reducción de tiempo en túnel de viento</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="mb-12">
+                        <h3 className="text-2xl font-semibold mb-6 text-red-600 flex items-center">🏎️ Especificaciones Técnicas de Neumáticos Pirelli 2025</h3>
+                        <div className="grid md:grid-cols-2 gap-8 mb-8">
+                            <div className="bg-white dark:bg-gray-900 rounded-xl p-6 border border-gray-200 dark:border-gray-700">
+                                <h4 className="text-lg font-bold text-red-600 mb-4">📏 Dimensiones</h4>
+                                <p><strong>Diámetro:</strong> 330mm (13 pulgadas)</p>
+                                <p><strong>Ancho delantero:</strong> 305mm</p>
+                                <p><strong>Ancho trasero:</strong> 370mm</p>
+                                <p><strong>Presión mínima:</strong> 23.5 PSI (delantero), 21.0 PSI (trasero)</p>
+                            </div>
+                            <div className="bg-white dark:bg-gray-900 rounded-xl p-6 border border-gray-200 dark:border-gray-700">
+                                <h4 className="text-lg font-bold text-red-600 mb-4">🎯 Compuestos 2025</h4>
+                                <p><strong>C1 (Duro):</strong> Blanco - Circuitos de alta velocidad</p>
+                                <p><strong>C2 (Medio-Duro):</strong> Amarillo - Uso versátil</p>
+                                <p><strong>C3 (Medio):</strong> Rojo - Compuesto estándar</p>
+                                <p><strong>C4 (Medio-Blando):</strong> Naranja - Circuitos técnicos</p>
+                                <p><strong>C5 (Blando):</strong> Rojo - Máximo agarre</p>
+                            </div>
+                        </div>
+                        <div className="bg-gradient-to-r from-red-600 to-red-400 p-8 rounded-xl text-white text-center mb-8">
+                            <h4 className="text-xl font-bold mb-4">🏁 Asignación de Neumáticos por Carrera</h4>
+                            <div className="grid md:grid-cols-3 gap-6">
+                                <div className="bg-white bg-opacity-10 rounded-lg p-6">
+                                    <div className="w-20 h-20 rounded-full mx-auto mb-4 flex items-center justify-center font-bold text-lg" style={{background: 'linear-gradient(45deg, #ff0000, #cc0000)', color: 'white'}}>SOFT</div>
+                                    <p className="font-semibold">Neumático Blando</p>
+                                    <p>Máximo agarre, menor durabilidad</p>
+                                    <p className="text-xs opacity-80">Ideal para clasificación y stints cortos</p>
+                                </div>
+                                <div className="bg-white bg-opacity-10 rounded-lg p-6">
+                                    <div className="w-20 h-20 rounded-full mx-auto mb-4 flex items-center justify-center font-bold text-lg" style={{background: 'linear-gradient(45deg, #ffff00, #cccc00)', color: 'black'}}>MED</div>
+                                    <p className="font-semibold">Neumático Medio</p>
+                                    <p>Balance entre agarre y durabilidad</p>
+                                    <p className="text-xs opacity-80">Versátil para diferentes estrategias</p>
+                                </div>
+                                <div className="bg-white bg-opacity-10 rounded-lg p-6">
+                                    <div className="w-20 h-20 rounded-full mx-auto mb-4 flex items-center justify-center font-bold text-lg" style={{background: 'linear-gradient(45deg, #ffffff, #cccccc)', color: 'black'}}>HARD</div>
+                                    <p className="font-semibold">Neumático Duro</p>
+                                    <p>Máxima durabilidad, menor agarre</p>
+                                    <p className="text-xs opacity-80">Para stints largos y estrategias conservadoras</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="bg-gradient-to-r from-red-600 to-red-400 p-8 rounded-xl text-white text-center">
+                            <h4 className="text-xl font-bold mb-4">⚡ Innovaciones 2025</h4>
+                            <div className="grid md:grid-cols-4 gap-6">
+                                <div>
+                                    <strong>🌱 Sostenibilidad</strong>
+                                    <p className="text-xs opacity-90">45% materiales reciclados</p>
+                                </div>
+                                <div>
+                                    <strong>🔬 Nuevos Compuestos</strong>
+                                    <p className="text-xs opacity-90">Mejor rendimiento en lluvia</p>
+                                </div>
+                                <div>
+                                    <strong>📊 Sensores Integrados</strong>
+                                    <p className="text-xs opacity-90">Telemetría en tiempo real</p>
+                                </div>
+                                <div>
+                                    <strong>🏁 Construcción Mejorada</strong>
+                                    <p className="text-xs opacity-90">Mayor consistencia térmica</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        );
+
+        // Justo antes de la definición de F1App, agrega este nuevo componente:
+const Standings2025Table = () => (
+  <section className="py-20 bg-white dark:bg-gray-900">
+    <div className="flex flex-col gap-16 lg:gap-24 pb-48 lg:pb-64">
+      <div className="relative">
+        <div className="container mx-auto relative z-10">
+          <div>
+            <div className="flex flex-col md:flex-row justify-between items-start gap-6">
+              <h1 className="text-4xl font-bold mb-6 text-gray-800 dark:text-white">
+                2025 Driver's Standings
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="container mx-auto relative z-10">
+        <div className="overflow-x-auto">
+          <table className="w-full border">
+            <thead className="border-b-2 border-gray-300">
+              <tr>
+                <th className="py-4 px-6 text-left">POS.</th>
+                <th className="py-4 px-6 text-left">DRIVER</th>
+                <th className="py-4 px-6 text-left">NACIONALIDAD</th>
+                <th className="py-4 px-6 text-left">EQUIPO</th>
+                <th className="py-4 px-6 text-right">PTS.</th>
+              </tr>
+            </thead>
+            <tbody>
+              {mockData.drivers.map((driver, idx) => (
+                <tr key={driver.name} className="border-b hover:bg-gray-50 dark:hover:bg-gray-800">
+                  <td className="py-3 px-6">{idx + 1}</td>
+                  <td className="py-3 px-6 flex items-center gap-3">
+                    {/* Puedes agregar aquí un avatar si lo deseas */}
+                    <span>{driver.name}</span>
+                  </td>
+                  <td className="py-3 px-6">{driver.nationality}</td>
+                  <td className="py-3 px-6">{driver.team}</td>
+                  <td className="py-3 px-6 text-right">{driver.points}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+);
+
         // Componente Principal
         const F1App = () => {
             const [darkMode, setDarkMode] = useState(false);
@@ -757,7 +1255,12 @@
             const renderSection = () => {
                 switch (activeSection) {
                     case 'inicio':
-                        return <Hero />;
+                        return (
+                          <>
+                            <Hero />
+                            <Standings2025Table />
+                          </>
+                        );
                     case 'carreras':
                         return <NextRaces />;
                     case 'clasificaciones':
@@ -770,6 +1273,8 @@
                         return <Statistics />;
                     case 'noticias':
                         return <News />;
+                    case 'reglas':
+                        return <ReglamentoFIA2025 />;
                     default:
                         return <Hero />;
                 }
